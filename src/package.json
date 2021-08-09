@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "clear": "rm -fr ../dist/ && mkdir ../dist",
+    "build:css": "postcss index.css -o ../dist/index.css",
+    "build": "npm run clear && cp index.html ../dist/ && npm run build:css"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  }
+}
